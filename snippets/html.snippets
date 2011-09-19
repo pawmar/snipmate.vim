@@ -135,7 +135,7 @@ snippet div
 		${2}
 	</div>
 snippet anc
-	<a href="${1:http://}">${2:text}</a>
+	<a href="${1:http://}">${2:link name}</a>
 # Embed QT Movie
 snippet movie
 	<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
@@ -165,6 +165,12 @@ snippet form
 	</form>
 snippet h1
 	<h1 id="${1:heading}">${2:$1}</h1>
+snippet h2
+	<h2>${1:header2}</h2>
+snippet h3
+	<h3>${1:header3}</h3>
+snippet h4
+	<h4>${1:header4}</h4>
 snippet input
 	<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="${3}"`Close()`>${4}
 snippet label
