@@ -200,3 +200,30 @@ snippet ul
 	<ul${1}>
 		<li>{$2}</li>
 	</ul>
+
+# Jinja snippets (prefix ji)
+# some code taken from: https://github.com/robhudson/snipmate_for_django 
+snippet ji%
+	{% ${1} %}${2}
+snippet ji%%
+	{% ${1:tag_name} %}
+	${2}
+	{% end$1 %}
+snippet ji{
+	{{ ${1} }}${2}
+snippet jiblock
+	{% block ${1} %}
+	${2}
+	{% endblock %}
+snippet jifor
+	{% for ${1} in ${2} %}
+	${3}
+	{% endfor %}
+snippet jiif
+	{% if ${1} %}
+	${2}
+	{% endif %}
+snippet jiifeq
+	{% ifequal ${1} ${2} %}
+	${3}
+	{% endifequal %}
